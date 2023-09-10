@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:store_app/screens/home.dart';
 
 void main() {
-  runApp( const HomePage());
+  runApp( const StoreApp());
 }
-
 
 class StoreApp extends StatelessWidget {
   const StoreApp({super.key});
@@ -12,6 +11,7 @@ class StoreApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: {
         HomePage.id :(context) =>  const HomePage(),
       },
